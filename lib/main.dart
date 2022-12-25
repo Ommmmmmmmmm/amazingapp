@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 
-
- void main() {
-  
+void main() {
   runApp(MaterialApp(
-      title: "Amazing App", //show while app is minimized
-      home: HomePage1(),
-
-
+    title: "Amazing App", //show while app is minimized
+    home: HomePage1(),
   ));
 }
 
@@ -27,13 +23,13 @@ class HomePage1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
-    appBar: AppBar(
-      title: Text("Amazing App"),//its app title
-    ),
-    body: Container(
-      child: Center(child: Text("Hi Flutter")),
-    ),
-   );
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Amazing App"), //its app title
+      ),
+      body: Container(
+        child: Center(child: Text("Hi Flutter")),
+      ),
+    );
   }
 }
